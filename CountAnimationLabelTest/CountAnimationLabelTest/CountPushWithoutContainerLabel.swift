@@ -27,7 +27,7 @@ class CountPushWithoutContainerLabel: UILabel {
         let y: CGFloat = 0
         
         stringArray.enumerated().forEach { index, text in
-            if text == "," || text == "." || text == "만" {
+            if textsNotAnimated.contains(text) {
                 let label = UILabel()
                 label.frame.origin = CGPoint(x: x, y: y)
                 label.textColor = textColor
