@@ -1,9 +1,17 @@
 
 import UIKit
 
+extension Int {
+    var formatted: String {
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .decimal
+        return numberFormatter.string(from: NSNumber(value: self)) ?? ""
+    }
+}
+
 class ViewController: UIViewController {
     
-    let sampleNumber = 923945
+    let sampleNumber = 920845
     
     @IBOutlet weak var countScrollAscendingLabel: CountScrollLabel!
     @IBOutlet weak var countScrollDownsendingLabel: CountScrollLabel!
@@ -31,7 +39,7 @@ class ViewController: UIViewController {
         countScrollAscendingLabel.configure(with: sampleNumber)
         countScrollDownsendingLabel.configure(with: sampleNumber)
         countPushLabel.configure(with: sampleNumber)
-    countPushWithoutContainerLabel.configure(with: sampleNumber)
+        countPushWithoutContainerLabel.configure(with: sampleNumber)
     }
 }
 
