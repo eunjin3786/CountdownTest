@@ -91,9 +91,10 @@ private class CountdownSingleLabel: UILabel {
     
     func animate(duration: CFTimeInterval = 0.07, stopRound: Int = 1) {
         self.duration = duration
+        self.stopRound = stopRound
+        
         self.currentRound = 1
         self.counter = 0
-        self.stopRound = stopRound
         
         self.counter += 1
         self.text = "\(counter)"
