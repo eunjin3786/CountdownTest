@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CountAnimationLabelTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="66" translatesAutoresizingMaskIntoConstraints="NO" id="DpS-wZ-bpJ">
+                                <rect key="frame" x="30" y="109.5" width="354" height="151"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="OCq-K3-jqr">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="42.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sxT-NF-bLk" customClass="CountScrollLabel" customModule="CountAnimationLabelTest" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="80.5" height="42.5"/>
+                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="35"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fk-XT-nNf">
+                                                <rect key="frame" x="324" y="0.0" width="30" height="42.5"/>
+                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
+                                                <state key="normal" title="Up"/>
+                                                <connections>
+                                                    <action selector="animateCountScrollAscendingLabel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="me7-DX-NGj"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="6MC-in-82q">
+                                        <rect key="frame" x="0.0" y="108.5" width="354" height="42.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WvH-KC-6Ul" customClass="CountScrollLabel" customModule="CountAnimationLabelTest" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="80.5" height="42.5"/>
+                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="35"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9nc-Cu-Lo8">
+                                                <rect key="frame" x="312" y="0.0" width="42" height="42.5"/>
+                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
+                                                <state key="normal" title="Down"/>
+                                                <connections>
+                                                    <action selector="animateCountScrollDownsendingLabel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZO7-Px-Vtf"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CATransition(push type)을 썼을 때" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5lx-wQ-eyY">
+                                <rect key="frame" x="15" y="360.5" width="252" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="ZAd-l1-KVW">
+                                <rect key="frame" x="30" y="411" width="354" height="120"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="xpi-Cd-OjG">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="42.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cYh-F1-lST" customClass="CountPushLabel" customModule="CountAnimationLabelTest" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="80.5" height="42.5"/>
+                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="35"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VNZ-tS-NzG">
+                                                <rect key="frame" x="256" y="0.0" width="98" height="42.5"/>
+                                                <state key="normal" title="with container"/>
+                                                <connections>
+                                                    <action selector="animateCountPushLabel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1fl-uM-Db6"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="PA7-ML-HLn">
+                                        <rect key="frame" x="0.0" y="77.5" width="354" height="42.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XqQ-xJ-Idj" customClass="CountPushWithoutContainerLabel" customModule="CountAnimationLabelTest" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="80.5" height="42.5"/>
+                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="35"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NfR-cs-Xv7">
+                                                <rect key="frame" x="234" y="0.0" width="120" height="42.5"/>
+                                                <state key="normal" title="without container"/>
+                                                <connections>
+                                                    <action selector="animateCountPushWithoutContainerLabel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zdU-KG-Z7d"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CAScrollLayer를 썼을 때" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jes-Qb-lug">
+                                <rect key="frame" x="15" y="59" width="166" height="20.5"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="5lx-wQ-eyY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="52c-Gj-MOx"/>
+                            <constraint firstItem="ZAd-l1-KVW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Blh-d9-m6a"/>
+                            <constraint firstItem="DpS-wZ-bpJ" firstAttribute="top" secondItem="jes-Qb-lug" secondAttribute="bottom" constant="30" id="EYF-wb-6g0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZAd-l1-KVW" secondAttribute="trailing" constant="30" id="Etw-eZ-Dnd"/>
+                            <constraint firstItem="jes-Qb-lug" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="Nwu-zs-UKn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DpS-wZ-bpJ" secondAttribute="trailing" constant="30" id="QOz-ax-26e"/>
+                            <constraint firstItem="5lx-wQ-eyY" firstAttribute="top" secondItem="DpS-wZ-bpJ" secondAttribute="bottom" constant="100" id="Sz1-BQ-YgJ"/>
+                            <constraint firstItem="DpS-wZ-bpJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="YT4-T8-Np4"/>
+                            <constraint firstItem="ZAd-l1-KVW" firstAttribute="top" secondItem="5lx-wQ-eyY" secondAttribute="bottom" constant="30" id="hmi-HB-C4M"/>
+                            <constraint firstItem="jes-Qb-lug" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="ywE-Li-Eku"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="countPushLabel" destination="cYh-F1-lST" id="tvB-wC-CtN"/>
+                        <outlet property="countPushWithoutContainerLabel" destination="XqQ-xJ-Idj" id="05i-bd-gxF"/>
+                        <outlet property="countScrollAscendingLabel" destination="sxT-NF-bLk" id="E57-bp-8Pn"/>
+                        <outlet property="countScrollDownsendingLabel" destination="WvH-KC-6Ul" id="IRk-dY-PFV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="112.5"/>
+        </scene>
+    </scenes>
+</document>
