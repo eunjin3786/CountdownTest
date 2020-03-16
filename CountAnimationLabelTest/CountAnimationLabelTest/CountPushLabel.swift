@@ -5,7 +5,7 @@ class CountPushLabel: UILabel {
     var fullText = ""
     
     private weak var container: UIView?
-    private let textsNotAnimated = [",", "."]
+    private let textsNotAnimated = [","]
     
     func configure(with number: Int) {
         let text = number.formatted
