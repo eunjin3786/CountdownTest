@@ -1,7 +1,7 @@
 
 import UIKit
 
-class  CountScrollLabel: UILabel {
+class CountScrollLabel: UILabel {
     
     var fullText = ""
     
