@@ -11,7 +11,7 @@ class CountScrollLabel: UILabel {
     private let duration = 0.7
     private let durationOffset = 0.2
     
-    private let textsNotAnimated = [",", "."]
+    private let textsNotAnimated = [","]
 
     func configure(with number: Int) {
         let text = number.formatted
