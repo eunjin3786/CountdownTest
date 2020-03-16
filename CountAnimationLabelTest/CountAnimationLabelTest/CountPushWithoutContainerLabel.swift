@@ -3,7 +3,7 @@ import UIKit
 class CountPushWithoutContainerLabel: UILabel {
     
     var fullText = ""
-    private let textsNotAnimated = [",", "."]
+    private let textsNotAnimated = [","]
     
     func configure(with number: Int) {
         let text = number.formatted
